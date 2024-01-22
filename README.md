@@ -45,18 +45,6 @@ An article, explaining the used libraries and techiniques is available [here](ht
 
 
 
-# Todo
-
-```
-```
-- [x] Initial countdown
-- [x] Weight lifting
-- [x] Jumping jack
-- [ ] Push-up
-- [ ] Improve user interface
-- [ ] Deploy to Heroku
-```
-
 
 The project was built with ❤️ during the Vento Ventures bootcamp in Turin, December 2023
 The main contributors are [Fabio Carlino](https://www.linkedin.com/in/fabiocarlino/) and [Luca Pricolo](https://www.linkedin.com/in/luca-pricolo/)
