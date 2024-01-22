@@ -141,7 +141,7 @@ function setupGui(cameras, net) {
 
   let activityController = null;
 
-  let activity = gui.addFolder('Workout');
+  let activity = gui.addFolder('Physio Exercises');
   activityController =
       activity.add(guiState.activity, 'Activity', ['Weight Lifting', 'Jumping jack']);
   guiState.atividade = guiState.activity.activity;
@@ -157,7 +157,7 @@ function setupGui(cameras, net) {
     
   }};
 
-  activity.add(obj,'add').name('Start Workout');
+  activity.add(obj,'add').name('Start Exercise');
   activity.open();
 
   let single = gui.addFolder('Single Pose Detection');
@@ -357,7 +357,7 @@ function detectPoseInRealTime(video, net) {
           if (wko_started == 1 && done == 0){
             ctx.font = "25px Arial"; 
             ctx.fillText('Repetitions: ' + Math.round(rep_count/2), 10, 90,);
-            ctx.fillText(guiState.activity.Activity + ' workout has started', 100, 490,);
+            ctx.fillText(guiState.activity.Activity + ' exercise has started', 100, 490,);
             if (timer == 0){
               if (count_down == 0){
                 t0 = new Date() / 1000;
@@ -419,7 +419,7 @@ function detectPoseInRealTime(video, net) {
             rep_count = 0;
             global_zero();
             ctx.font = "29px Arial"; 
-            ctx.fillText('Workout not started, plase start a new train...', 10, 30,);
+            ctx.fillText('Physio Exercise not started, plase start a new train...', 10, 30,);
           }
           
           
